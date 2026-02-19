@@ -71,7 +71,7 @@ const StaffPerformancePredictor = () => {
         }
 
         try {
-            const response = await fetch('http://localhost:5000/predict', { // Adjust URL if your Flask server runs on a different port
+            const response = await fetch('https://staff-salary-backend.onrender.com/predict', { // Adjust URL if your Flask server runs on a different port
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
